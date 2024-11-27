@@ -1,0 +1,12 @@
+:root {
+    --cell-size: 50px;
+    --light-cell-color: white;
+    --dark-cell-color: black;
+    --bg-color: bisque;
+}
+
+@media all and (max-width : 450px) {
+    :root {
+        --cell-size: 25px; 
+    }
+}

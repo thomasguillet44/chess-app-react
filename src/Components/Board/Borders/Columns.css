@@ -1,0 +1,6 @@
+.columns {
+    display: flex; 
+    flex-direction: row;
+    grid-column: 2;
+    justify-content: space-around;
+}

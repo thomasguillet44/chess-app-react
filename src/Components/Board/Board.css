@@ -1,0 +1,20 @@
+.board {
+    display: grid;
+    grid-template-columns: calc(0.3*var(--cell-size)) calc(8*var(--cell-size));
+}
+
+.cells {
+    display: grid;
+    /* repeat pour faire telle nombre de ligne/colonne de telle taille*/
+    grid-template-columns: repeat(8, var(--cell-size));
+    grid-template-rows: repeat(8,  var(--cell-size));
+    width: calc(8*var(--cell-size));
+}
+
+.light-cell {
+    background-color: var(--light-cell-color);
+}
+
+.dark-cell {
+    background-color: var(--dark-cell-color);
+}
