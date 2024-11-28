@@ -1,0 +1,157 @@
+/* On fait une couche pieces par dessus le board pour eviter de mettre le bazar dans le board quand on déplace des pieces */
+.pieces {
+    position: absolute; 
+    left: calc(0.3*var(--cell-size));
+    top: 0;
+    bottom: calc(0.3*var(--cell-size));
+    right: 0;
+}
+
+.piece {
+    /* pour faire la taille du parent divisier par 8 */
+    width: 12.5%;
+    height: 12.5%;
+    position: absolute;
+    background-size: 100%;    
+}
+
+.bB {
+    background-image: url(../../../assets/bB.svg);
+}
+.wB {
+    background-image: url(../../../assets/wB.svg);
+}
+.wR {
+    background-image: url(../../../assets/wR.svg);
+}
+.bR {
+    background-image: url(../../../assets/bR.svg);
+}
+.bN {
+    background-image: url(../../../assets/bN.svg);
+}
+.wN {
+    background-image: url(../../../assets/wN.svg);
+}
+.wQ {
+    background-image: url(../../../assets/wQ.svg);
+}
+.bQ {
+    background-image: url(../../../assets/bQ.svg);
+}
+.wP {
+    background-image: url(../../../assets/wP.svg);
+}
+.bP {
+    background-image: url(../../../assets/bP.svg);
+}
+.wK {
+    background-image: url(../../../assets/wK.svg);
+}
+.bK {
+    background-image: url(../../../assets/bK.svg);
+}
+
+/* Qualités blanches */
+.p-00 {
+    transform: translate(0, 700%);
+}
+.p-07 {
+    transform: translate(700%, 700%);
+}
+.p-01 {
+    transform: translate(100%, 700%);
+}
+.p-06 {
+    transform: translate(600%, 700%);
+}
+.p-02 {
+    transform: translate(200%, 700%); 
+}
+.p-05 {
+    transform: translate(500%, 700%);
+}
+.p-03 {
+    transform: translate(300%, 700%);
+}
+.p-04 {
+    transform: translate(400%, 700%);
+}
+
+/* Pions blancs */
+.p-10 {
+    transform: translate(0, 600%);
+}
+.p-11 {
+    transform: translate(100%, 600%);
+}
+.p-12 {
+    transform: translate(200%, 600%);
+}
+.p-13 {
+    transform: translate(300%, 600%);
+}
+.p-14 {
+    transform: translate(400%, 600%);
+}
+.p-15 {
+    transform: translate(500%, 600%);
+}
+.p-16 {
+    transform: translate(600%, 600%);
+}
+.p-17 {
+    transform: translate(700%, 600%);
+}
+
+/* Qualités noires */
+.p-70 {
+    transform: translate(0, 0);
+}
+.p-77 {
+    transform: translate(700%, 0);
+}
+.p-71 {
+    transform: translate(100%, 0);
+}
+.p-76 {
+    transform: translate(600%, 0);
+}
+.p-72 {
+    transform: translate(200%, 0); 
+}
+.p-75 {
+    transform: translate(500%, 0);
+}
+.p-73 {
+    transform: translate(300%, 0);
+}
+.p-74 {
+    transform: translate(400%, 0);
+}
+
+/* Pions noirs */
+.p-60 {
+    transform: translate(0, 100%);
+}
+.p-61 {
+    transform: translate(100%, 100%);
+}
+.p-62 {
+    transform: translate(200%, 100%);
+}
+.p-63 {
+    transform: translate(300%, 100%);
+}
+.p-64 {
+    transform: translate(400%, 100%);
+}
+.p-65 {
+    transform: translate(500%, 100%);
+}
+.p-66 {
+    transform: translate(600%, 100%);
+}
+.p-67 {
+    transform: translate(700%, 100%);
+}

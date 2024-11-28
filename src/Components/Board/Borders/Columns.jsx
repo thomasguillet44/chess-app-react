@@ -3,7 +3,7 @@ import "./Columns.css"
 const Columns = ({columns}) => {
     return <div className="columns">
         {
-            columns.map(i => <span key={i}>{i}</span>)
+            columns.map(i => <span key={i}>{String.fromCharCode(i+96)}</span>)
         }
     </div>
 }

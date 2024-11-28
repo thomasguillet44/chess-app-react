@@ -1,8 +1,8 @@
 :root {
     --cell-size: 50px;
-    --light-cell-color: white;
-    --dark-cell-color: black;
-    --bg-color: bisque;
+    --light-cell-color: rgb(255, 255, 255);
+    --dark-cell-color: rgb(168, 242, 255);
+    --bg-color: rgb(0, 0, 0);
 }
 
 @media all and (max-width : 450px) {
