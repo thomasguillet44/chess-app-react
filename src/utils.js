@@ -26,3 +26,17 @@ export const createState = () => {
 
     return position;
 }
+
+export const createNewPosition = (position) => {
+    const newPosition = Array(8).fill('').map(x => Array(8).fill(''))
+
+    for (let line = 0; line < 8; line++) {
+        for (let column = 0; column < 8; column++) {
+            newPosition[line][column] = position[line][column]
+        }
+        
+    }
+
+    return newPosition;
+
+}
